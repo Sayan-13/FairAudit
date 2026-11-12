@@ -1,0 +1,25 @@
+{'30-44': 4688, '<30': 3607, '45-59': 2864, '60+': 1039}
+LogReg with acc 0.8523 age DP 0.27 age EO 0.239 sex PPV gap 0.029
+LogReg without acc 0.8516 age DP 0.266 age EO 0.25 sex PPV gap 0.035
+LinearSVM with acc 0.8522 age DP 0.261 age EO 0.233 sex PPV gap 0.028
+LinearSVM without acc 0.8502 age DP 0.257 age EO 0.242 sex PPV gap 0.046
+RandForest with acc 0.8607 age DP 0.269 age EO 0.274 sex PPV gap 0.052
+RandForest without acc 0.8603 age DP 0.263 age EO 0.283 sex PPV gap 0.047
+HistGB with acc 0.87 age DP 0.321 age EO 0.311 sex PPV gap 0.049
+HistGB without acc 0.8708 age DP 0.306 age EO 0.298 sex PPV gap 0.068
+intersectional {'DP': 0.3116478629311021, 'EO': 0.2847826086956522, 'max_group': 'Male/Asian-Pac-Islander', 'min_group': 'Female/Black'}
+HistGB without sex/race acc 0.8708 DP 0.171 EO 0.075
+HistGB + DI remover (lambda=1) acc 0.8615 DP 0.173 EO 0.066
+HistGB + EO post-processing (Hardt) acc 0.8546 DP 0.099 EO 0.004
+HistGB + in-processing EG (DP) acc 0.847 DP 0.023 EO 0.264
+   classifiers in the ensemble: 13
+HistGB + in-processing EG (EO) acc 0.861 DP 0.131 EO 0.037
+   classifiers in the ensemble: 12
+LogReg without sex/race acc 0.8516 DP 0.173 EO 0.099
+LogReg + DI remover (lambda=1) acc 0.8484 DP 0.154 EO 0.04
+LogReg + EO post-processing (Hardt) acc 0.8339 DP 0.097 EO 0.011
+LogReg + in-processing EG (DP) acc 0.8301 DP 0.015 EO 0.271
+   classifiers in the ensemble: 17
+LogReg + in-processing EG (EO) acc 0.8383 DP 0.101 EO 0.0
+   classifiers in the ensemble: 21
+done

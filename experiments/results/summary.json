@@ -1,0 +1,151 @@
+{
+  "data": {
+    "raw_rows": 48842,
+    "duplicates_dropped": 52,
+    "clean_rows": 48790,
+    "missing_per_col": {
+      "workclass": 2795,
+      "occupation": 2805,
+      "native-country": 856
+    },
+    "pos_rate": 0.23941381430621028,
+    "sex_counts": {
+      "Male": 32614,
+      "Female": 16176
+    },
+    "race_counts": {
+      "White": 41714,
+      "Black": 4683,
+      "Asian-Pac-Islander": 1517,
+      "Amer-Indian-Eskimo": 470,
+      "Other": 406
+    },
+    "income_rate_by_sex": {
+      "Female": 0.1094,
+      "Male": 0.3039
+    },
+    "income_rate_by_race": {
+      "Amer-Indian-Eskimo": 0.117,
+      "Asian-Pac-Islander": 0.2696,
+      "Black": 0.1209,
+      "Other": 0.1232,
+      "White": 0.2541
+    }
+  },
+  "split": {
+    "total": 48790,
+    "train": 29273,
+    "val": 7319,
+    "test": 12198,
+    "train_full": 36592,
+    "pos_rate": {
+      "train": 0.23943565743176307,
+      "val": 0.23937696406612927,
+      "test": 0.23938350549270374
+    },
+    "test_sex_counts": {
+      "Male": 8194,
+      "Female": 4004
+    },
+    "test_race_counts": {
+      "White": 10459,
+      "Black": 1152,
+      "Asian-Pac-Islander": 367,
+      "Amer-Indian-Eskimo": 116,
+      "Other": 104
+    }
+  },
+  "best_params": {
+    "LogReg_with": {
+      "C": 10
+    },
+    "LogReg_without": {
+      "C": 1
+    },
+    "LinearSVM_with": {
+      "C": 1
+    },
+    "LinearSVM_without": {
+      "C": 1
+    },
+    "RandForest_with": {
+      "max_depth": 20,
+      "min_samples_leaf": 1,
+      "n_estimators": 200
+    },
+    "RandForest_without": {
+      "max_depth": 20,
+      "min_samples_leaf": 1,
+      "n_estimators": 200
+    },
+    "HistGB_with": {
+      "learning_rate": 0.1,
+      "max_iter": 200,
+      "max_leaf_nodes": 31
+    },
+    "HistGB_without": {
+      "learning_rate": 0.1,
+      "max_iter": 200,
+      "max_leaf_nodes": 31
+    }
+  },
+  "sgd_curve": {
+    "epochs": 40,
+    "train_loss_first": 0.5179525032156556,
+    "train_loss_last": 0.32195432198888524,
+    "val_loss_first": 0.5469344633595039,
+    "val_loss_last": 0.32377182112292124,
+    "val_loss_min": 0.32059156545860656,
+    "val_loss_argmin": 34,
+    "val_acc_last": 0.8548982101379969
+  },
+  "hgb_curve": {
+    "iters": 400,
+    "train_first": 0.5063310174785906,
+    "train_last": 0.20296095354230617,
+    "val_first": 0.5065488009000412,
+    "val_last": 0.285545916294849,
+    "val_min": 0.27750184150298596,
+    "val_argmin": 120
+  },
+  "thresholds_HistGB": {
+    "thresholds": {
+      "Female": 0.4121447994577401,
+      "Male": 0.5130974652202535
+    },
+    "target_tpr": 0.6626712328767124
+  },
+  "reweigh_weights_HistGB": {
+    "Male_0": 1.092957468776491,
+    "Male_1": 0.7872996444502182,
+    "Female_0": 0.8548802704744327,
+    "Female_1": 2.170246575849496
+  },
+  "thresholds_LogReg": {
+    "thresholds": {
+      "Female": 0.3922001142684029,
+      "Male": 0.5183103841551897
+    },
+    "target_tpr": 0.6090182648401826
+  },
+  "reweigh_weights_LogReg": {
+    "Male_0": 1.092957468776491,
+    "Male_1": 0.7872996444502182,
+    "Female_0": 0.8548802704744327,
+    "Female_1": 2.170246575849496
+  },
+  "best_model": {
+    "model": "HistGB",
+    "variant": "with",
+    "cm": [
+      [
+        8699,
+        579
+      ],
+      [
+        1007,
+        1913
+      ]
+    ]
+  }
+}

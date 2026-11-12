@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn==1.9.1
+scipy
+matplotlib
+fairlearn==0.15.0
+streamlit
+joblib
+jupyter
+nbformat

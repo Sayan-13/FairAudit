@@ -1,0 +1,25 @@
+rows after cleaning: 48790 duplicates dropped: 52
+{'total': 48790, 'train': 29273, 'val': 7319, 'test': 12198, 'train_full': 36592, 'pos_rate': {'train': 0.23943565743176307, 'val': 0.23937696406612927, 'test': 0.23938350549270374}, 'test_sex_counts': {'Male': 8194, 'Female': 4004}, 'test_race_counts': {'White': 10459, 'Black': 1152, 'Asian-Pac-Islander': 367, 'Amer-Indian-Eskimo': 116, 'Other': 104}}
+LogReg with {'clf__C': 10} acc 0.8523 f1 0.6577 sex DP 0.1797 sex EO 0.1194
+LogReg without {'clf__C': 1} acc 0.8516 f1 0.6546 sex DP 0.1735 sex EO 0.099
+LinearSVM with {'clf__C': 1} acc 0.8522 f1 0.6519 sex DP 0.1723 sex EO 0.1107
+LinearSVM without {'clf__C': 1} acc 0.8502 f1 0.6463 sex DP 0.1636 sex EO 0.0807
+RandForest with {'clf__max_depth': 20, 'clf__min_samples_leaf': 1, 'clf__n_estimators': 200} acc 0.8607 f1 0.6702 sex DP 0.16 sex EO 0.0726
+RandForest without {'clf__max_depth': 20, 'clf__min_samples_leaf': 1, 'clf__n_estimators': 200} acc 0.8603 f1 0.6669 sex DP 0.1594 sex EO 0.0786
+HistGB with {'clf__learning_rate': 0.1, 'clf__max_iter': 200, 'clf__max_leaf_nodes': 31} acc 0.87 f1 0.7069 sex DP 0.1811 sex EO 0.0912
+HistGB without {'clf__learning_rate': 0.1, 'clf__max_iter': 200, 'clf__max_leaf_nodes': 31} acc 0.8708 f1 0.7053 sex DP 0.171 sex EO 0.0748
+sgd {'epochs': 40, 'train_loss_first': 0.5179525032156556, 'train_loss_last': 0.32195432198888524, 'val_loss_first': 0.5469344633595039, 'val_loss_last': 0.32377182112292124, 'val_loss_min': 0.32059156545860656, 'val_loss_argmin': 34, 'val_acc_last': 0.8548982101379969}
+hgb {'iters': 400, 'train_first': 0.5063310174785906, 'train_last': 0.20296095354230617, 'val_first': 0.5065488009000412, 'val_last': 0.285545916294849, 'val_min': 0.27750184150298596, 'val_argmin': 120}
+significance tests done
+HistGB with sex/race acc 0.87 DP 0.181 EO 0.091
+HistGB without sex/race acc 0.8708 DP 0.171 EO 0.075
+HistGB + reweighing acc 0.8652 DP 0.101 EO 0.098
+HistGB + group thresholds acc 0.8684 DP 0.147 EO 0.002
+HistGB + reweighing + thresholds acc 0.8683 DP 0.134 EO 0.023
+LogReg with sex/race acc 0.8523 DP 0.18 EO 0.119
+LogReg without sex/race acc 0.8516 DP 0.173 EO 0.099
+LogReg + reweighing acc 0.8419 DP 0.083 EO 0.146
+LogReg + group thresholds acc 0.8473 DP 0.131 EO 0.036
+LogReg + reweighing + thresholds acc 0.8467 DP 0.131 EO 0.004
+best model: HistGB with [[8699, 579], [1007, 1913]]
+done, results are in /Users/sridhar/doc/work/ml/prj/experiments/results

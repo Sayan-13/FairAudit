@@ -1,0 +1,32 @@
+{
+  "age_group_counts_test": {
+    "30-44": 4688,
+    "<30": 3607,
+    "45-59": 2864,
+    "60+": 1039
+  },
+  "age_income_rate": {
+    "30-44": 0.2954,
+    "45-59": 0.3828,
+    "60+": 0.243,
+    "<30": 0.0515
+  },
+  "intersectional_counts_test": {
+    "Male/White": 7207,
+    "Female/White": 3252,
+    "Male/Black": 593,
+    "Female/Black": 559,
+    "Male/Asian-Pac-Islander": 251,
+    "Female/Asian-Pac-Islander": 116,
+    "Male/Amer-Indian-Eskimo": 73,
+    "Male/Other": 70,
+    "Female/Amer-Indian-Eskimo": 43,
+    "Female/Other": 34
+  },
+  "intersectional_with_n>=100": {
+    "DP": 0.3116478629311021,
+    "EO": 0.2847826086956522,
+    "max_group": "Male/Asian-Pac-Islander",
+    "min_group": "Female/Black"
+  }
+}
